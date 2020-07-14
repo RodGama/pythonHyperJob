@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Welcome to HyperJob! </h2>
+<div>
+    <a href="/login">Login</a>
+</div>
+<div>
+    <a href="/signup">Sign up</a>
+</div>
+<div>
+    <a href="/vacancies">Vacancies</a>
+</div>
+<div>
+    <a href="/resumes">Resumes</a>
+</div>
+<div>
+    <a href="/home">Profile</a>
+</div>
+<div>
+    <h1>Create Vacancy</h1>
+    <form action="/vacancy/new" method="post">
+        {% csrf_token %}
+        <label for="description">Description</label>
+        <input type="text" name="description"/>
+        <button type="submit">ENVIAR</button>
+    </form>
+</div>
+<div>
+    <h1>Create Resume</h1>
+    <form action="/resume/new" method="post">
+    {% csrf_token %}
+    <label for="description">Description</label>
+    <input type="text" name="description"/>
+    <button type="submit">ENVIAR</button>
+</form>
+</div>
+</body>
+</html>

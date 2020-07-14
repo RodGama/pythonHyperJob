@@ -1,0 +1,18 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    template = """
+    <html>
+      <div>{% %} {{ }} {% %}</div>
+    </html>
+    """
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/6401
+status: Failed
+feedback:
+  message: |
+    Failed. Cannot check answer. Perhaps output format is wrong.
+  time: Thu, 09 Jul 2020 20:46:38 UTC
+record: -1
